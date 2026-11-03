@@ -6,7 +6,7 @@
   <a href="./README_zh.md"><img src="https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-blue?style=flat-square" alt="中文 README" /></a>
 </p>
 
-**TL;DR:** Built on [OpenHoopVision-core](https://github.com/feifeifei85/OpenHoopVision-core), this project uses its detector and basketball data to analyze a single shot and produce a synchronized review video and `metrics.json`.
+**TL;DR:** Built on [OpenHoopVision-core](https://github.com/feifeifei85/OpenHoopVision-core), this project uses its detector and basketball data to analyze a single shot and produce a review video with metrics.
 
 ## Demo
 

@@ -6,7 +6,7 @@
   <a href="./README.md"><img src="https://img.shields.io/badge/README-English-blue?style=flat-square" alt="English README" /></a>
 </p>
 
-**简介：** 本项目基于 [OpenHoopVision-core](https://github.com/feifeifei85/OpenHoopVision-core)，使用其检测模型和篮球数据分析单次投篮，并生成同步复核视频和 `metrics.json`。
+**简介：** 本项目基于 [OpenHoopVision-core](https://github.com/feifeifei85/OpenHoopVision-core)，使用其检测模型和篮球数据分析单次投篮，并生成带指标的复核视频。
 
 ## 演示
 
