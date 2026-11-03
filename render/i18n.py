@@ -1,0 +1,195 @@
+"""Translations for human-facing text rendered into output videos."""
+
+SUPPORTED_LANGUAGES = ("en", "zh")
+
+_TEXT = {
+    "en": {
+        "status.validation_warning": "Metric validation warning",
+        "status.metrics_unavailable": "Some metrics unavailable",
+        "status.rim_missing": "Rim not detected",
+        "hand.left": "Left-handed",
+        "hand.right": "Right-handed",
+        "hand.unknown": "Hand: unknown",
+        "view.frontal": "Frontal",
+        "view.profile": "Profile",
+        "view.oblique": "Oblique",
+        "view.unknown": "Unknown",
+        "meta": "{hand} · {view} view · {seconds:.2f}s · Frame {frame:04d}/{total:04d}",
+        "event.none": "No ball release detected",
+        "event.waiting": "Waiting for ball release",
+        "phase.frame": "{title} · Frame {frame:04d}",
+        "phase.unconfirmed": "{title} · Not confirmed",
+        "phase.waiting": "{title} · Waiting",
+        "metric.pending": "Pending",
+        "metric.unavailable": "N/A",
+        "panel.skeleton": "3D skeleton",
+        "panel.floor": "Perspective floor",
+        "phase.load": "Preparation",
+        "phase.lift": "Ball lift",
+        "phase.release": "Release",
+        "phase.rim_contact": "Rim entry",
+        "dashboard.frame": "Shot Frame",
+        "dashboard.frame_summary": "Frame {frame}/{total} · {seconds:.2f}s",
+        "dashboard.frame_count_time": "{total} frames · {seconds:.2f}s",
+        "dashboard.current_frame_progress": "Now {frame}/{total} · {seconds:.2f}s",
+        "dashboard.timeline": "Shot Timeline",
+        "dashboard.joint_angles": "Joint Angles",
+        "dashboard.knee_angle": "Knee Angle",
+        "dashboard.hip_angle": "Hip Angle",
+        "dashboard.upper_arm_angle": "Upper Arm",
+        "dashboard.forearm_angle": "Forearm Angle",
+        "dashboard.release_frame": "Release Frame",
+        "dashboard.release_angle": "Release Angle",
+        "dashboard.elbow_speed": "Elbow Speed",
+        "dashboard.jump_height": "Jump Height",
+        "dashboard.ball_stats": "Ball Stats",
+        "dashboard.ball_speed_short": "Speed",
+        "dashboard.motion": "Motion",
+        "dashboard.shot_motion": "Shot Motion",
+        "dashboard.motion_single": "One-motion",
+        "dashboard.motion_two": "Two-motion",
+        "dashboard.jump_at_release": "At Release",
+        "dashboard.jump_maximum": "Maximum",
+        "dashboard.at_frame": "at frame {frame}",
+        "dashboard.event_pending": "Upcoming",
+        "dashboard.motion_pending": "In progress",
+        "dashboard.jump_so_far": "so far",
+        "dashboard.body_height_ratio": "x body height",
+        "dashboard.rim_not_observed": "Rim: Not observed",
+        "dashboard.rim_entry": "Rim entry {angle}",
+        "dashboard.camera_badge": "{view} Camera",
+        "dashboard.phase_load_short": "Load",
+        "dashboard.phase_lift_short": "Lift",
+        "dashboard.phase_release_short": "Release",
+        "dashboard.at_release": "at release",
+        "dashboard.at_current_frame": "at current frame",
+        "dashboard.at_shot_start": "at shot start",
+        "dashboard.of_frames": "of {total} frames",
+        "dashboard.body_height_at_release": "body height at release",
+        "dashboard.phase_ball_lift": "Lift",
+        "dashboard.phase_rise": "Rise",
+        "dashboard.phase_release": "Release",
+        "dashboard.phase_follow_through": "Follow Through",
+        "dashboard.phase_dip": "Dip",
+        "dashboard.phase_forearm_peak": "Forearm Peak",
+    },
+    "zh": {
+        "status.validation_warning": "指标校验异常",
+        "status.metrics_unavailable": "部分指标不可用",
+        "status.rim_missing": "未检测到篮筐",
+        "hand.left": "左手",
+        "hand.right": "右手",
+        "hand.unknown": "未判定",
+        "view.frontal": "正面",
+        "view.profile": "侧面",
+        "view.oblique": "斜向",
+        "view.unknown": "未知",
+        "meta": "{hand} · 视角{view} · {seconds:.2f}秒 · 帧 {frame:04d}/{total:04d}",
+        "event.none": "尚未检测到球离手事件",
+        "event.waiting": "等待球离手事件",
+        "phase.frame": "{title} · 第{frame:04d}帧",
+        "phase.unconfirmed": "{title} · 未确认",
+        "phase.waiting": "{title} · 等待触发",
+        "metric.pending": "待触发",
+        "metric.unavailable": "不可用",
+        "panel.skeleton": "三维骨架",
+        "panel.floor": "透视地面",
+        "phase.load": "蓄力与举球",
+        "phase.lift": "起球",
+        "phase.release": "出手时刻",
+        "phase.rim_contact": "篮筐接触",
+        "dashboard.frame": "动作画面",
+        "dashboard.frame_summary": "第{frame}/{total}帧 · {seconds:.2f}秒",
+        "dashboard.frame_count_time": "共{total}帧 · {seconds:.2f}秒",
+        "dashboard.current_frame_progress": "当前{frame}/{total}帧 · {seconds:.2f}秒",
+        "dashboard.timeline": "投篮时间轴",
+        "dashboard.joint_angles": "关节角度",
+        "dashboard.knee_angle": "膝盖弯曲度",
+        "dashboard.hip_angle": "髋部弯曲度",
+        "dashboard.upper_arm_angle": "大臂夹角",
+        "dashboard.forearm_angle": "小臂夹角",
+        "dashboard.release_frame": "出手帧",
+        "dashboard.release_angle": "出手角度",
+        "dashboard.elbow_speed": "甩臂角速度",
+        "dashboard.jump_height": "弹跳高度",
+        "dashboard.ball_stats": "球数据",
+        "dashboard.ball_speed_short": "球速",
+        "dashboard.motion": "Motion值",
+        "dashboard.shot_motion": "动作类型",
+        "dashboard.motion_single": "一段式",
+        "dashboard.motion_two": "二段式",
+        "dashboard.jump_at_release": "出手时",
+        "dashboard.jump_maximum": "最大值",
+        "dashboard.at_frame": "第{frame}帧",
+        "dashboard.event_pending": "未到阶段",
+        "dashboard.motion_pending": "进行中",
+        "dashboard.jump_so_far": "截至当前",
+        "dashboard.body_height_ratio": "倍身高",
+        "dashboard.rim_not_observed": "篮筐：未观察到触框",
+        "dashboard.rim_entry": "进球角度 {angle}",
+        "dashboard.camera_badge": "{view}视角",
+        "dashboard.phase_load_short": "蓄力",
+        "dashboard.phase_lift_short": "起球",
+        "dashboard.phase_release_short": "出手",
+        "dashboard.at_release": "出手时",
+        "dashboard.at_current_frame": "当前帧",
+        "dashboard.at_shot_start": "蓄力开始时",
+        "dashboard.of_frames": "共{total}帧",
+        "dashboard.body_height_at_release": "出手时身高比例",
+        "dashboard.phase_ball_lift": "举球",
+        "dashboard.phase_rise": "起跳上升",
+        "dashboard.phase_release": "出手",
+        "dashboard.phase_follow_through": "跟随动作",
+        "dashboard.phase_dip": "沉球",
+        "dashboard.phase_forearm_peak": "小臂峰值",
+    },
+}
+
+_METRIC_LABELS_EN = {
+    "knee_angle_deg": "Knee flexion",
+    "knee_ball_height_ratio": "Ball height",
+    "knee_elbow_angle_deg": "Forearm angle",
+    "knee_upper_arm_angle_deg": "Upper arm angle",
+    "knee_hip_angle_deg": "Hip flexion",
+    "takeoff_ball_height_ratio": "Ball height",
+    "takeoff_elbow_angle_deg": "Forearm angle",
+    "takeoff_upper_arm_angle_deg": "Upper arm angle",
+    "takeoff_hip_angle_deg": "Hip angle",
+    "release_height_ratio": "Release height",
+    "release_foot_lift_ratio": "Jump height at release",
+    "max_jump_height_ratio": "Maximum jump height",
+    "release_angle_deg": "Release angle",
+    "elbow_angular_velocity_deg_s": "Arm swing speed",
+    "motion_value": "Motion",
+    "entry_angle_deg": "Entry angle",
+}
+_METRIC_UNITS_EN = {
+    "倍身高": "x body height",
+    "倍可见身高": "x visible height",
+    "°/秒": "°/s",
+}
+
+
+def translate(key: str, lang: str) -> str:
+    """Return a UI string for a supported language."""
+    return _TEXT[lang][key]
+
+
+def phase_title(phase_id: str, fallback: str, lang: str) -> str:
+    """Return a translated title for a phase, or its supplied fallback."""
+    key = f"phase.{phase_id}"
+    return translate(key, lang) if key in _TEXT[lang] else fallback
+
+
+def metric_label(metric_id: str, fallback: str, lang: str) -> str:
+    """Return a translated metric label when one is available."""
+    if lang == "en":
+        return _METRIC_LABELS_EN.get(metric_id, fallback)
+    return fallback
+
+
+def metric_unit(unit: str, lang: str) -> str:
+    """Return a translated display unit when one is available."""
+    if lang == "en":
+        return _METRIC_UNITS_EN.get(unit, unit)
+    return unit
